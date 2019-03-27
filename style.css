@@ -1,0 +1,233 @@
+.container{
+    width:1080px !important;
+    max-width:1080px;
+        
+}
+
+.row {
+font-size: 1.5rem;
+}
+
+.titul {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.titul1 {
+    margin: auto;
+    font-family: 'Anitype Redwood 21', serif;
+}
+
+.titul a {
+    color: rgb(2, 1, 1);
+    text-decoration:none;
+}
+
+
+.titul p {
+    color: rgb(2, 1, 1);
+    text-decoration:none;
+}
+
+.titul a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.titul a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f4c430;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.titul a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f4c430;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.titul a:hover::before{
+    width: 50%;
+    left: 0;
+}
+
+.titul a:hover::after{
+    width: 50%;
+}
+
+.head {
+    font-size: 7rem;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  /* Чтобы не выделялся текст */
+    font-family: 'Anitype Redwood 21', serif;
+}
+
+.text {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.image {
+    position: relative;
+    bottom: 28px;
+    text-align: center;
+}
+
+.pravo {
+   text-align: right; 
+}
+
+.icon {
+    position: relative;
+    text-align: center;
+}
+
+.icon p {
+    display: inline;
+    position: relative;
+    z-index: 1010;
+}
+
+.inst {
+    text-align: center;
+}
+
+
+
+.komiks1 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 10px;
+
+}
+
+.komiks1:hover {
+    outline: 0px dashed #f4c430;
+    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
+    animation: 1s animateBorder infinite;
+        -webkit-transition: all 1s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+
+.komiks2 {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 10px;
+    -webkit-filter: brightness(30%);
+}
+
+body {background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)}
+
+
+.komiks:hover .knopka1 {
+    display:block;
+}
+
+a.images {
+    background: url("image/klava.jpg");
+    display: block;
+    width: 330px;
+    height: 460px;
+
+}
+
+a.images:hover {
+    	background: url("image/komiks.jpg");
+}
+
+.images {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    border-radius: 30px;
+}
+
+.images:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.icon1 {
+    position: relative;
+    text-align: center;
+}
+
+.icon1 p {
+    display: inline;
+    position: relative;
+}
+
+.icon1 a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.icon1 a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f4c430;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.icon1 a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f4c430;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.icon1 a:hover::before{
+    width: 50%;
+    left: 0;
+}
+
+.icon1 a:hover::after{
+    width: 50%;
+}
+
+.knopka2 p {
+  font-size: 2.4rem;  
+}
+
