@@ -1,6 +1,13 @@
-.container{
+.container {
     width: 100%;
     max-width: 1080;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container.contact {
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -13,23 +20,24 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;  /* Чтобы не выделялся текст */
+    user-select: none;
+    /* Чтобы не выделялся текст */
     font-family: 'Anitype Redwood1';
 }
 
 @media screen and (max-width: 400px) {
-.head{
-    font-size: 5rem;
-}
+    .head {
+        font-size: 5rem;
+    }
 }
 
 body {
-    background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
+    background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
 }
 
 .row {
-font-size: 1.5rem;
-font-family: 'Xarrovv';
+    font-size: 1.5rem;
+    font-family: 'Xarrovv';
 }
 
 .nav {
@@ -70,12 +78,12 @@ font-family: 'Xarrovv';
     bottom: 0;
 }
 
-.nav a:hover::before{
+.nav a:hover::before {
     width: 50%;
     left: 0;
 }
 
-.nav a:hover::after{
+.nav a:hover::after {
     width: 50%;
 }
 
@@ -85,7 +93,7 @@ font-family: 'Xarrovv';
 }
 
 .KlavaAutors {
-   text-align: right;
+    text-align: right;
 }
 
 .witcher {
@@ -104,7 +112,7 @@ font-family: 'Xarrovv';
 }
 
 .witcher a {
-  border-radius: 10px;
+    border-radius: 10px;
     display: block;
     position: relative;
 }
@@ -113,32 +121,7 @@ font-family: 'Xarrovv';
     outline: 0px dashed #f4c430;
     box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
     animation: 1s animateBorder infinite;
-        -webkit-transition: all 1s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-.witcher a:after {
-    content: '';
-    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
-    width: 52px;
-    height: 35px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    visibility: hidden;
-}
-
-.witcher:hover {
-    outline: 0px dashed #f4c430;
-    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
-    animation: 1s animateBorder infinite;
-        -webkit-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -160,6 +143,7 @@ a.photoklava {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
 a.photoklava:hover {
     background: url("image/komiks.jpg");
     display: block;
@@ -182,26 +166,25 @@ a.photoklava:hover {
     outline: none;
     border-radius: 10px;
     text-align: center;
-
 }
 
-.video iframe{
+.video iframe {
     width: 500px;
     height: 315px;
 }
 
 @media screen and (max-width: 534px) {
-.video iframe{
-    width: 400px;
-    height: 215px;
-}
+    .video iframe {
+        width: 400px;
+        height: 215px;
+    }
 }
 
 @media screen and (max-width: 375px) {
-.video iframe{
-    width: 300px;
-    height: 115px;
-}
+    .video iframe {
+        width: 300px;
+        height: 115px;
+    }
 }
 
 .photo {
@@ -220,7 +203,7 @@ a.photoklava:hover {
 }
 
 .photo a {
-  border-radius: 10px;
+    border-radius: 10px;
     display: block;
     position: relative;
 }
@@ -229,7 +212,7 @@ a.photoklava:hover {
     outline: 0px dashed #f4c430;
     box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
     animation: 1s animateBorder infinite;
-        -webkit-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
@@ -259,21 +242,33 @@ a.photoklava:hover {
     text-align: left;
 }
 
-.image {
-    position: relative;
-    bottom: 28px;
+.email {
+    font-family: 'IriskaFree';
     text-align: center;
+    font-size: 2rem;
+    border-radius: 1px;
+    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
 }
 
-.text {
-    font-size: 1.5rem;
-    text-align: left;
+.cat {
+    text-align: right;
 }
 
-.image {
-    position: relative;
-    bottom: 28px;
-    text-align: center;
+.cat img {
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .cat {
+        bottom: 0px;
+        text-align: center;
+    }
 }
 
 .icon {
@@ -331,11 +326,11 @@ a.photoklava:hover {
     bottom: 0;
 }
 
-.icon1 a:hover::before{
+.icon1 a:hover::before {
     width: 50%;
     left: 0;
 }
 
-.icon1 a:hover::after{
+.icon1 a:hover::after {
     width: 50%;
 }
