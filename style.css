@@ -1,73 +1,8 @@
 .container{
-    width:1080px !important;
-    max-width:1080px;
-        
-}
-
-.row {
-font-size: 1.5rem;
-}
-
-.titul {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 3rem;
-}
-
-.titul1 {
-    margin: auto;
-    font-family: 'Anitype Redwood 21', serif;
-}
-
-.titul a {
-    color: rgb(2, 1, 1);
-    text-decoration:none;
-}
-
-
-.titul p {
-    color: rgb(2, 1, 1);
-    text-decoration:none;
-}
-
-.titul a {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-}
-
-.titul a::before {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: #f4c430;
-    transition: width .5s ease-in-out, left .5s ease-in-out;
-    left: 50%;
-    bottom: 0;
-}
-
-.titul a::after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    width: 0;
-    background-color: #f4c430;
-    transition: width .5s ease-in-out;
-    left: 50%;
-    bottom: 0;
-}
-
-.titul a:hover::before{
-    width: 50%;
-    left: 0;
-}
-
-.titul a:hover::after{
-    width: 50%;
+    width: 100%;
+    max-width: 1080;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .head {
@@ -79,7 +14,223 @@ font-size: 1.5rem;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;  /* Чтобы не выделялся текст */
-    font-family: 'Anitype Redwood 21', serif;
+    font-family: 'Anitype Redwood1';
+}
+
+body {
+    background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
+}
+
+.row {
+font-size: 1.5rem;
+font-family: 'Xarrovv';
+}
+
+.nav {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+}
+
+.nav a {
+    color: rgb(2, 1, 1);
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav a::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f4c430;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.nav a::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #f4c430;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.nav a:hover::before{
+    width: 50%;
+    left: 0;
+}
+
+.nav a:hover::after{
+    width: 50%;
+}
+
+.navlinks {
+    margin: auto;
+    font-family: 'Anitype Redwood1';
+}
+
+.KlavaAutors {
+   text-align: right;
+}
+
+.witcher {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.witcher img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.witcher a {
+  border-radius: 10px;
+    display: block;
+    position: relative;
+}
+
+.witcher a:hover {
+    outline: 0px dashed #f4c430;
+    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
+    animation: 1s animateBorder infinite;
+        -webkit-transition: all 1s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.witcher a:after {
+    content: '';
+    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.witcher:hover {
+    outline: 0px dashed #f4c430;
+    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
+    animation: 1s animateBorder infinite;
+        -webkit-transition: all 1s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.photoklava {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 20px;
+    border-radius: 30px;
+}
+
+a.photoklava {
+    background: url("image/klava.jpg");
+        display: block;
+        width: 330px;
+    height: 460px;
+}
+a.photoklava:hover {
+    	background: url("image/komiks.jpg");
+        width: 330px;
+    height: 460px;
+}
+
+.photoklava:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.video {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    width: : 200px;
+
+}
+
+.video iframe{
+    width: 500px;
+    height: 315px;
+}
+
+.photo {
+    float: left;
+    width: 33.333333%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.photo a {
+  border-radius: 10px;
+    display: block;
+    position: relative;
+}
+
+.photo a:hover {
+    outline: 0px dashed #f4c430;
+    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
+    animation: 1s animateBorder infinite;
+        -webkit-transition: all 1s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.photo a:after {
+    content: '';
+    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+
+.photo:hover > a:after {
+    visibility: visible;
 }
 
 .text {
@@ -93,8 +244,15 @@ font-size: 1.5rem;
     text-align: center;
 }
 
-.pravo {
-   text-align: right; 
+.text {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.image {
+    position: relative;
+    bottom: 28px;
+    text-align: center;
 }
 
 .icon {
@@ -110,72 +268,6 @@ font-size: 1.5rem;
 
 .inst {
     text-align: center;
-}
-
-
-
-.komiks1 {
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    border-radius: 10px;
-
-}
-
-.komiks1:hover {
-    outline: 0px dashed #f4c430;
-    box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
-    animation: 1s animateBorder infinite;
-        -webkit-transition: all 1s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-
-.komiks2 {
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    border-radius: 10px;
-    -webkit-filter: brightness(30%);
-}
-
-body {background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)}
-
-
-.komiks:hover .knopka1 {
-    display:block;
-}
-
-a.images {
-    background: url("image/klava.jpg");
-    display: block;
-    width: 330px;
-    height: 460px;
-
-}
-
-a.images:hover {
-    	background: url("image/komiks.jpg");
-}
-
-.images {
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px 20px;
-    border-radius: 30px;
-}
-
-.images:hover {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
 }
 
 .icon1 {
@@ -226,8 +318,3 @@ a.images:hover {
 .icon1 a:hover::after{
     width: 50%;
 }
-
-.knopka2 p {
-  font-size: 2.4rem;  
-}
-
