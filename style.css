@@ -17,6 +17,12 @@
     font-family: 'Anitype Redwood1';
 }
 
+@media screen and (max-width: 400px) {
+.head{
+    font-size: 5rem;
+}
+}
+
 body {
     background:url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
 }
@@ -145,19 +151,21 @@ font-family: 'Xarrovv';
     display: inline-block;
     padding: 12px 20px;
     margin: 10px 20px;
-    border-radius: 30px;
 }
 
 a.photoklava {
     background: url("image/klava.jpg");
-        display: block;
-        width: 330px;
-    height: 460px;
+    display: block;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 a.photoklava:hover {
-    	background: url("image/komiks.jpg");
-        width: 330px;
-    height: 460px;
+    background: url("image/komiks.jpg");
+    display: block;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .photoklava:hover {
@@ -174,13 +182,26 @@ a.photoklava:hover {
     outline: none;
     border-radius: 10px;
     text-align: center;
-    width: : 200px;
 
 }
 
 .video iframe{
     width: 500px;
     height: 315px;
+}
+
+@media screen and (max-width: 534px) {
+.video iframe{
+    width: 400px;
+    height: 215px;
+}
+}
+
+@media screen and (max-width: 375px) {
+.video iframe{
+    width: 300px;
+    height: 115px;
+}
 }
 
 .photo {
