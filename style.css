@@ -12,6 +12,13 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 991px) {
+    .container.about {
+        display: inline-block;
+
+    }
+}
+
 .head {
     font-size: 7rem;
     text-align: center;
@@ -90,6 +97,19 @@ body {
 .navlinks {
     margin: auto;
     font-family: 'Anitype Redwood1';
+}
+
+.photowitcher {
+    text-align: center;
+}
+
+.photowitcher img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .KlavaAutors {
@@ -237,6 +257,19 @@ a.photoklava:hover {
     visibility: visible;
 }
 
+.myphotos1{
+    width: 280px;
+    float:left;
+    margin: 0px 15px 0px 0px;
+}
+
+.myphotos2 {
+    width: 280px;
+    float: right;
+    margin: 0px 0px 0px 15px;
+}
+
+
 .text {
     font-size: 1.5rem;
     text-align: left;
@@ -271,9 +304,22 @@ a.photoklava:hover {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .cat {
+        top: 150px;
+        text-align: center;
+    }
+}
+
 .icon {
     position: relative;
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .icon1 {
+        top: 250px;
+    }
 }
 
 .icon p {
