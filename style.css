@@ -257,9 +257,10 @@ a.photoklava:hover {
     visibility: visible;
 }
 
-.myphotos1{
+.myphotos1 {
     width: 280px;
     float:left;
+    text-align: center;
     margin: 0px 15px 0px 0px;
 }
 
@@ -267,7 +268,29 @@ a.photoklava:hover {
     width: 280px;
     float: right;
     margin: 0px 0px 0px 15px;
+    text-align: center;
 }
+
+@media screen and (max-width: 414px) {
+    .myphotos1 {
+        width: 400px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+    }
+
+    .myphotos2 {
+        width: 400px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        float: none;
+        text-align: center;
+    }
+    }
+
 
 
 .text {
