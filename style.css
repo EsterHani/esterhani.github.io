@@ -144,6 +144,18 @@ width: 175px;
     }
 }
 
+@media screen and (max-width: 375px) {
+#raz span {
+width: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+#raz span {
+width: 130px;
+    }
+}
+
 
 .witcher img {
     display: block;
@@ -263,6 +275,17 @@ width: 291px;
 @media screen and (max-width: 500px) {
 #raz1 span {
 width: 175px;
+    }
+}
+@media screen and (max-width: 375px) {
+#raz1 span {
+width: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+#raz1 span {
+width: 130px;
     }
 }
 
