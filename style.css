@@ -138,7 +138,7 @@ width: 198px;
   display: none;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
 #raz span {
 width: 175px;
     }
@@ -260,7 +260,7 @@ width: 291px;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
 #raz1 span {
 width: 175px;
     }
