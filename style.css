@@ -99,11 +99,11 @@ body {
     font-family: 'Anitype Redwood1';
 }
 
-.photowitcher {
+.pictureswitcher {
     text-align: center;
 }
 
-.photowitcher img {
+.pictureswitcher img {
     position: absolute;
     margin: auto;
     left: 0;
@@ -117,11 +117,33 @@ body {
 }
 
 .witcher {
-    float: left;
-    width: 20%;
+    width: 200px;
     padding: 10px;
     box-sizing: border-box;
 }
+
+#raz {
+  text-align: center;
+}
+#raz span {
+  display: inline-block;
+  max-width: 100%;
+  width: 10em;
+  margin: .5em; /* при сужении окна браузера от блока до края родителя присутствует отступ слева и справа */
+  word-wrap: break-word;
+  vertical-align: top;
+width: 198px;
+}
+#raz span:empty { /* убрать пустой элемент из потока */
+  display: none;
+}
+
+@media screen and (max-width: 414px) {
+#raz span {
+width: 175px;
+    }
+}
+
 
 .witcher img {
     display: block;
@@ -148,7 +170,7 @@ body {
     transition: all 0.2s ease;
 }
 
-.photoklava {
+.picturesklava {
     text-decoration: none;
     outline: none;
     display: inline-block;
@@ -156,7 +178,7 @@ body {
     margin: 10px 20px;
 }
 
-a.photoklava {
+a.picturesklava {
     background: url("image/klava.jpg");
     display: block;
     height: 100%;
@@ -164,7 +186,7 @@ a.photoklava {
     background-repeat: no-repeat;
 }
 
-a.photoklava:hover {
+a.picturesklava:hover {
     background: url("image/komiks.jpg");
     display: block;
     height: 100%;
@@ -172,12 +194,18 @@ a.photoklava:hover {
     background-repeat: no-repeat;
 }
 
-.photoklava:hover {
+.picturesklava:hover {
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+@media screen and (max-width: 800px) {
+    .picturesklava1 {
+height: 500px;
+    }
 }
 
 .video {
@@ -207,14 +235,43 @@ a.photoklava:hover {
     }
 }
 
-.photo {
-    float: left;
-    width: 33.333333%;
+.pictures {
+    width: 200px;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.photo img {
+#raz1 {
+  text-align: center;
+}
+#raz1 span {
+  display: inline-block;
+  max-width: 100%;
+  width: 10em;
+  margin: .5em; /* при сужении окна браузера от блока до края родителя присутствует отступ слева и справа */
+  word-wrap: break-word;
+  vertical-align: top;
+width: 351px;
+}
+
+@media screen and (max-width: 1191px) {
+#raz1 span {
+width: 291px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+#raz1 span {
+width: 175px;
+    }
+}
+
+#raz1 span:empty { /* убрать пустой элемент из потока */
+  display: none;
+}
+
+
+.pictures img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -222,13 +279,13 @@ a.photoklava:hover {
     border-radius: 10px;
 }
 
-.photo a {
+.pictures a {
     border-radius: 10px;
     display: block;
     position: relative;
 }
 
-.photo a:hover {
+.pictures a:hover {
     outline: 0px dashed #f4c430;
     box-shadow: 0 0 0 6px rgba(244, 196, 48, 0.62);
     animation: 1s animateBorder infinite;
@@ -237,24 +294,6 @@ a.photoklava:hover {
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
-}
-
-.photo a:after {
-    content: '';
-    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
-    width: 52px;
-    height: 35px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    visibility: hidden;
-}
-
-.photo:hover > a:after {
-    visibility: visible;
 }
 
 .myphotos1 {
