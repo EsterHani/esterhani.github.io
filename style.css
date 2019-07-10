@@ -215,9 +215,35 @@ a.picturesklava:hover {
 }
 
 @media screen and (max-width: 800px) {
-    .picturesklava1 {
-height: 480px;
-    }
+.picturesklava2 {
+    margin: 0 auto;
+}
+
+a.picturesklava2 {
+background: url("image/klava.jpg");
+    display: block;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+}
+
+.picturesklava2 {
+display: block;
+text-align: center;
+margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+a.picturesklava {
+display: none;
+}
+}
+    
+@media screen and (min-width: 800px) {
+.picturesklava2 {
+display: none;
+}
 }
 
 .video {
