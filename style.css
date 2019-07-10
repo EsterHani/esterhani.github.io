@@ -215,8 +215,10 @@ a.picturesklava:hover {
 }
 
 @media screen and (max-width: 800px) {
-.picturesklava2 {
-    margin: 0 auto;
+.picturesklava2 img {
+    display: inline-block;
+    height: auto;
+max-width: 100%;
 }
 
 a.picturesklava2 {
@@ -259,10 +261,17 @@ display: none;
     height: 315px;
 }
 
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 1905px) {
     .video iframe {
         width: 400px;
         height: 215px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .video iframe {
+        width: 320px;
+        height: 135px;
     }
 }
 
@@ -379,8 +388,6 @@ width: 130px;
         text-align: center;
     }
     }
-
-
 
 .text {
     font-size: 1.5rem;
