@@ -261,7 +261,7 @@ display: none;
     height: 315px;
 }
 
-@media screen and (max-width: 1905px) {
+@media screen and (max-width: 1205px) {
     .video iframe {
         width: 400px;
         height: 215px;
@@ -295,7 +295,7 @@ display: none;
   display: inline-block;
   max-width: 100%;
   width: 10em;
-  margin: .5em; /* при сужении окна браузера от блока до края родителя присутствует отступ слева и справа */
+  margin: .5em;
   word-wrap: break-word;
   vertical-align: top;
 width: 351px;
