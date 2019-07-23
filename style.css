@@ -182,71 +182,14 @@ width: 130px;
     transition: all 0.2s ease;
 }
 
-.picturesklava {
-    text-decoration: none;
-    outline: none;
-    display: inline-block;
-    padding: 12px 20px;
-    margin: 10px 20px;
+.komicsklava:hover {
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    transition: all 3s ease;
 }
 
-a.picturesklava {
-    background: url("image/klava.jpg");
-    display: block;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-a.picturesklava:hover {
-    background: url("image/komiks.jpg");
-    display: block;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.picturesklava:hover {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-@media screen and (max-width: 760px) {
-.picturesklava2 img {
-    display: inline-block;
-    height: auto;
-max-width: 100%;
-}
-
-a.picturesklava2 {
-background: url("image/klava.jpg");
-    display: block;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-}
-
-.picturesklava2 {
-display: block;
-text-align: center;
-margin: 0 auto;
-}
-
-@media screen and (max-width: 760px) {
-a.picturesklava {
-display: none;
-}
-}
-
-@media screen and (min-width: 760px) {
-.picturesklava2 {
-display: none;
-}
-}
 
 .video {
     display: inline-block;
