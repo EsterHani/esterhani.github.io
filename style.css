@@ -32,7 +32,7 @@
     font-family: 'Anitype Redwood1';
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
     .head {
         font-size: 5rem;
     }
