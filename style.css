@@ -214,7 +214,7 @@ a.picturesklava:hover {
     transition: all 1s ease;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
 .picturesklava2 img {
     display: inline-block;
     height: auto;
@@ -236,13 +236,13 @@ text-align: center;
 margin: 0 auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
 a.picturesklava {
 display: none;
 }
 }
-    
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 760px) {
 .picturesklava2 {
 display: none;
 }
