@@ -499,3 +499,19 @@ width: 130px;
 .icon1 a:hover::after {
     width: 50%;
 }
+
+.text span {
+  letter-spacing: 5px;
+  transition: 2s;
+  text-shadow: 0px 0px 0px #f4c430;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+}
+.text span:hover {
+  text-shadow: -8px 8px 0px #f4c430;
+  transition: 0.2s;
+  top: -8px;
+  left: 8px;
+}
