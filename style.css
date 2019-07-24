@@ -38,6 +38,12 @@
     }
 }
 
+@media screen and (max-width: 320px) {
+    .head {
+        font-size: 4.2rem;
+    }
+}
+
 body {
     background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
 }
@@ -112,7 +118,7 @@ body {
     right: 0;
 }
 
-.KlavaAutors {
+i.KlavaAutors {
     text-align: right;
 }
 
@@ -182,12 +188,25 @@ width: 130px;
     transition: all 0.2s ease;
 }
 
-.komicsklava:hover {
-    -webkit-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    transition: all 3s ease;
+a.komicsklava {
+background:url('image/komiks.jpg') 0 0 no-repeat;
+float: right;
+margin: 0px 0px 0px 15px;
+background-size: 280px;
+}
+a.komicsklava img {
+    opacity:1;
+    transition:opacity .5s;
+    float:right;
+    width: 280px;
+}
+a.komicsklava:hover img {
+    opacity:0;
+    transition:opacity .5s;
+}
+
+.imgkomicsklava {
+
 }
 
 
