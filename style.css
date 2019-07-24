@@ -194,21 +194,36 @@ float: right;
 margin: 0px 0px 0px 15px;
 background-size: 280px;
 }
+
 a.komicsklava img {
     opacity:1;
     transition:opacity .5s;
     float:right;
     width: 280px;
+    text-align: center;
 }
 a.komicsklava:hover img {
     opacity:0;
     transition:opacity .5s;
 }
 
-.imgkomicsklava {
+@media screen and (max-width: 414px) {
+    a.komicsklava img {
+        width: 200px;
+    } 
+    a.komicsklava {
+        background-size: 200px;
+    } 
+    }
 
-}
-
+@media screen and (max-width: 320px) {
+    a.komicsklava img {
+        width: 150px;
+    } 
+    a.komicsklava {
+        background-size: 150px;
+    } 
+    }
 
 .video {
     display: inline-block;
