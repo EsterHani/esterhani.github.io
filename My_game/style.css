@@ -1,0 +1,111 @@
+body {
+    background-color: white;
+}
+
+#container {
+    max-width: 600px;
+    padding-top: 10.3%;
+    margin: 0 auto;
+}
+
+.sum {
+    text-align: center;
+    font-size: 130px;
+    font-family: 'Fira Sans Thin';
+}
+
+p {
+  margin: 0 auto;  
+}
+
+.score {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Fira Sans Thin';
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 80px; 
+    font-family: 'Fira Sans Thin';
+    margin: 0 auto;
+}
+
+
+.buttons {
+    display: flex;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.square {
+    background: #a6a3c7;
+    float: left;
+    margin: 1.66%;
+    width: 180px;
+    height: 180px;
+    font-size: 80px; 
+    font-family: 'Fira Sans Thin';
+}
+
+.img1 img {
+    width: 100%;
+    padding: 5% 0;
+}
+
+#show {
+    display: none;
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #a6a3c7;
+    opacity: 0.9;
+    transition: all 250ms;
+}
+
+.text {
+    text-align: center;
+        color: #000000;
+        position: relative;
+        top: 15%;
+        opacity: 1 !important;
+}
+
+.close {
+    display: inline-block;
+    color: #000000;
+    padding: 10px 30px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 30pt;
+    border-radius: 20px;
+    cursor:pointer;
+    font-family: 'Fira Sans Thin';
+    opacity: 1 !important;
+}
+
+p {
+    font-size: 60px; 
+    font-family: 'Fira Sans Thin';
+    opacity: 1 !important;
+}
+
+.img2 img {
+    width: 80%;
+    opacity: 1 !important;
+}
