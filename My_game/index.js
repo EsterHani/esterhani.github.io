@@ -32,7 +32,7 @@ function startGame() {
     
     numbers.push(answer);
     function sortfunction(a, b) {
-        return (0.5 — Math.random());
+        return (Math.random() - 0.5);
     }
     numbers.sort(sortfunction);
     
