@@ -1,11 +1,15 @@
 body {
     background-color: white;
+    min-height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #container {
     max-width: 600px;
-    padding-top: 10.3%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .sum {
@@ -14,7 +18,11 @@ body {
     font-family: 'Fira Sans Thin';
 }
 
-p {
+.sum p {
+  margin: 0 auto;  
+}
+
+.score p {
   margin: 0 auto;  
 }
 
@@ -24,14 +32,6 @@ p {
     font-family: 'Fira Sans Thin';
     margin: 0 auto;
 }
-
-h2 {
-    text-align: center;
-    font-size: 80px; 
-    font-family: 'Fira Sans Thin';
-    margin: 0 auto;
-}
-
 
 .buttons {
     display: flex;
@@ -63,7 +63,8 @@ button {
 
 #show {
     display: none;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     height: 600px;
     border-radius: 10px;
     color: #000000;
@@ -74,16 +75,14 @@ button {
     left: 0;
     margin: auto;
     background: #a6a3c7;
-    opacity: 0.9;
-    transition: all 250ms;
+    opacity: 0.95;
 }
 
-.text {
+.row {
     text-align: center;
         color: #000000;
         position: relative;
         top: 15%;
-        opacity: 1 !important;
 }
 
 .close {
@@ -96,16 +95,14 @@ button {
     border-radius: 20px;
     cursor:pointer;
     font-family: 'Fira Sans Thin';
-    opacity: 1 !important;
 }
 
-p {
+.row p {
     font-size: 60px; 
     font-family: 'Fira Sans Thin';
-    opacity: 1 !important;
+    margin: 0 auto;
 }
 
 .img2 img {
     width: 80%;
-    opacity: 1 !important;
 }
