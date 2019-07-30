@@ -108,6 +108,7 @@ button {
     border-radius: 20px;
     cursor:pointer;
     font-family: 'Fira Sans Thin';
+    color: white;
 }
 
 .text p {

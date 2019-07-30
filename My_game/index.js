@@ -31,9 +31,11 @@ function startGame() {
     }
     
     numbers.push(answer);
-    numbers.sort(function(a, b) {
-    return (Math.random() - 0.5);
-    });
+    function sortfunction(a, b) {
+        return (0.5 — Math.random());
+    }
+    numbers.sort(sortfunction);
+    
     
     for (let i = 0; i < squares.length; i++) {
     squares[i].textContent = numbers[i];
@@ -42,7 +44,9 @@ function startGame() {
 }
 
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+    var rand = min - 0.5 + Math.random() * (max - min + 1);
+    rand = Math.round(rand);
+    return rand;
 }
 
 function windowNewGame(){
