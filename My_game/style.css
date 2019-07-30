@@ -1,5 +1,8 @@
 body {
-    background: rgba(0, 0, 0, 0.0);
+    background: url(images/sait1.png) no-repeat;
+    background-size: 1080px;
+    background-attachment: fixed;
+    background-position:center;
     min-height: 96vh;
     display: flex;
     justify-content: center;
