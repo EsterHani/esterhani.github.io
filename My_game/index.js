@@ -9,8 +9,6 @@ document.getElementById("container").addEventListener("click", function(Event) {
         startGame();
     } else {
         windowNewGame();
-        /*score = 0;
-        startGame();*/
     }
 });
 
@@ -50,9 +48,13 @@ function getRandomInt(min, max) {
 function windowNewGame(){
     let show = document.getElementById("show");
     let showClose = document.querySelector(".close");
-    show.style.display="flex";
+    let accountEnd = document.querySelector(".accountEnd");
+    show.style.opacity="1";
+    show.style.zIndex="2";
+    document.getElementById("accountEnd").textContent = score-1;
     showClose.onclick=function(){
-        show.style.display="none";
+        show.style.opacity="0";
+        show.style.zIndex="0";
         score = 0;
         startGame();   
     }
