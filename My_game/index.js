@@ -2,6 +2,9 @@ let answer;
 let score = 0;
 let dissipation = 3;
 
+let previousFirst = 0;
+let previousSecond = 0;
+
 startGame();
 
 document.getElementById("container").addEventListener("click", function(Event) {
@@ -16,8 +19,15 @@ document.getElementById("container").addEventListener("click", function(Event) {
 });
 
 function startGame() {
-    let first = getRandomInt(1, 10);
-    let second = getRandomInt(1, 10);
+    do{
+    var first = getRandomInt(1, 10);
+    }while(first != previousFirst);
+    do{    
+    var second = getRandomInt(1, 10);
+    }while(second != previousSecond) ;
+    previousSecond = second;
+    previousFirst = first;
+        
     document.getElementById("first").textContent = first;
     document.getElementById("second").textContent = second;
     answer = first * second;
