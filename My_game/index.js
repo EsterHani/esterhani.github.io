@@ -1,6 +1,6 @@
 let answer;
 let score = 0;
-
+let dissipation=3;//переменная задающая величину разброса
 startGame();
 
 document.getElementById("container").addEventListener("click", function(Event) {
@@ -22,15 +22,16 @@ function startGame() {
     let squares = document.querySelectorAll(".square");
     
     let numbers = [];
-    for (let i = 0; i < squares.length - 1; i++) {
-        let x = getRandomInt(1, 100);
-        while (~numbers.indexOf(x) || x === answer) {//Проверка, чтобы не было повторных ответов
-            x = getRandomInt(0, 100);
-        }
-        numbers.push(x);
-    }
-    
     numbers.push(answer);
+    while( numbers.length<squares.length){
+    let x=getRandomInt(answer-dissipation,answer+dissipation);
+    if (x>0){//потому что может получится отрицательное число
+    if(numbers.indexOff(x)==-1){//проверка на отсутствие повторов в массиве проверки можно было объединить через && но так имхо нагляднее
+    numbers.push(x);
+   }
+ }
+    }
+   
     function sortfunction(a, b) {
         return (Math.random() - 0.5);
     }
