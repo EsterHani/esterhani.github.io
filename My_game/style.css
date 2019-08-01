@@ -2,7 +2,7 @@ body {
     background: url(images/sait1.png) no-repeat;
     background-size: 1080px;
     background-attachment: fixed;
-    background-position:center;
+    background-position: center;
     min-height: 96vh;
     display: flex;
     justify-content: center;
@@ -14,7 +14,6 @@ body {
     width: 100%;
     z-index: 1;
 }
-
 
 .footer p {
     text-align: center;
@@ -28,11 +27,11 @@ body {
 }
 
 .sum p {
-  margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .score p {
-  margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .score {
@@ -59,9 +58,9 @@ button {
     background: #a6a3c7;
     float: left;
     margin: 1.66%;
-    width: 25vh;
+    width: 100%;
     height: 180px;
-    font-size: 80px; 
+    font-size: 80px;
     font-family: 'Fira Sans Thin';
 }
 
@@ -95,7 +94,6 @@ button {
     transform: translate(0, 0px);
     width: 100%;
     padding: 50px;
-
 }
 
 .close {
@@ -106,21 +104,21 @@ button {
     background: #80577b;
     font-size: 30pt;
     border-radius: 20px;
-    cursor:pointer;
+    cursor: pointer;
     font-family: 'Fira Sans Thin';
     color: white;
 }
 
 .text p {
-    font-size: 60px; 
+    font-size: 60px;
     font-family: 'Fira Sans Thin';
     margin: 0 auto;
 }
 
 @media screen and (max-width: 602px) {
-.row {
-    padding: 30px; 
-}
+    .row {
+        padding: 30px;
+    }
 }
 
 .img2 img {
