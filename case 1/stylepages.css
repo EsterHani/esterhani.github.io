@@ -100,6 +100,7 @@ button {
     border: none;
     cursor: pointer;
     display: block;
+    z-index: 1000;
 }
 
 .square a {
@@ -108,15 +109,18 @@ button {
     font-size: 40px;
     font-family: 'Open Sans Condensed', sans-serif;
     display: block;
+    z-index: 1000;
 }
 
 .square a:hover {
     text-decoration: none;
     display: block;
+    z-index: 1000;
 }
 
 .buttons {
     margin-left: 1370px;
     margin-top: -170px;
     display: block;
+    z-index: 1000;
 }
