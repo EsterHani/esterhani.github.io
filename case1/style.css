@@ -1,0 +1,84 @@
+body {
+    display: table;
+}
+
+.bodystart {
+    background: url(images/back.png) no-repeat;
+    background-size: 1920px;
+    background-attachment: fixed;
+    display: table;
+    justify-content: center;
+    align-items: center;
+    margin: 135px 0 0 510px;
+}
+
+.bodyend {
+    background: url(images/back.png) no-repeat;
+    background-size: 1920px;
+    background-attachment: fixed;
+    display: table;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0 0 510px;
+}
+
+.bodyback {
+    background: url(images/backend.png) no-repeat;
+    background-size: 1920px;
+    background-attachment: fixed;
+    display: table;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0 0 550px;
+}
+
+#container {
+    width: 900px;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.starttext {
+    text-align: center;   
+    font-size: 90px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 100px;
+}
+button {
+    background: url(images/buttonyesno.png);
+    width: 220px;
+    height: 96px;
+    font-size: 50px;
+    font-family: 'Fira Sans Thin';
+    margin: 0 auto;
+    margin-top: -5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.square a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.buttons {
+    display:flex;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon1 {
+    position: relative;
+    text-align: center;
+}
+
+.icon1 p {
+    display: inline-block;
+    position: relative;
+}
